@@ -33,7 +33,7 @@ jobs:
       run: dotnet build Formation-Ecommerce.sln --configuration Release --no-restore
 
     - name: Run Tests
-      run: dotnet test Formation-Ecommerce.Test/Formation-Ecommerce.Test.csproj --configuration Release --no-build --verbosity normal
+      run: dotnet test Formation-Ecommerce.sln --configuration Release --no-build --verbosity normal
 
   # Job 2: Build Docker et Push vers ACR
   docker-build-push:
